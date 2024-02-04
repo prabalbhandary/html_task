@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th colspan="2">Name</th>
+                <th>Faculty</th>
+                <th>Roll No</th>
+                <th>Email</th>
+                <th>Image</th>
+                <th>Social Media Link</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="2">John Doe</td>
+                <td>Science</td>
+                <td>12345</td>
+                <td>john.doe@example.com</td>
+                <td><img src="profile.jpg" alt="Profile Image"></td>
+                <td>
+                    <a href="https://www.facebook.com/johndoe" target="_blank">
+                        <img src="facebook-icon.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com/johndoe" target="_blank">
+                        <img src="twitter-icon.png" alt="Twitter">
+                    </a>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+</body>
+</html>

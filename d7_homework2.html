@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 2</title>
+    <link rel="shortcut icon" href="img/bb.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 style="text-align: center"><b>STUDENT REGISTRATION FORM</b></h1>
+    <form action="#">
+      <fieldset>
+        <label for="fname">FIRST NAME</label>
+        <input type="text" maxlength="30" id="fname" required />
+        <br />
+        <label for="lname">LAST NAME</label>
+        <input type="text" maxlength="30" id="lname" required />
+        <br />
+        <label for="dob">DATE OF BIRTH</label>
+        <select required>
+          <option value="day">Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+        </select>
+        <select required>
+          <option value="month">Month</option>
+          <option value="january">January</option>
+          <option value="feburary">Feburary</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>
+        <select required>
+          <option value="year">Year</option>
+          <option value="2000">2000</option>
+          <option value="2001">2001</option>
+          <option value="2002">2002</option>
+          <option value="2003">2003</option>
+          <option value="2004">2004</option>
+          <option value="2005">2005</option>
+        </select>
+        <br />
+        <label for="email">EMAIL ADDRESS</label>
+        <input type="email" id="email" />
+        <br />
+        <label for="mobileno">MOBILE NUMBER</label>
+        <input type="number" maxlength="10" id="mobileno" />
+        <br />
+        <label for="gender">GENDER</label>
+        <input type="radio" required id="gender" />Male
+        <input type="radio" required id="gender" />Female
+        <br />
+        <label for="address">ADDRESS</label>
+        <textarea required id="address" cols="20" rows="5"></textarea>
+        <br />
+        <label for="city">CITY</label>
+        <input type="text" required id="city" maxlength="30" />
+        <br />
+        <label for="pin">PIN CODE</label>
+        <input type="number" maxlength="6" id="pin" required />
+        <br />
+        <label for="state">STATE</label>
+        <input type="text" maxlength="30" id="state" required />
+        <br />
+        <label for="country">COUNTRY</label>
+        <input type="text" value="India" id="country" required readonly />
+        <br />
+        <label for="hobbies">HOBBIES</label>
+        Drawing <input type="checkbox" required id="hobbies" /> Singing
+        <input type="checkbox" required id="hobbies" /> Sketching
+        <input type="checkbox" required id="hobbies" /> Others
+        <input type="checkbox" required id="hobbies" /> <input type="text" />
+        <br />
+        <label for="qualifiaction">QUALIFICATION</label>
+        <table>
+          <thead>
+            <tr>
+              <th>SI.NO.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Class X</td>
+              <td><input maxlength="10" type="text" id="qualifiaction" /></td>
+              <td>
+                <input
+                  step="0.01"
+                  oninput="limitDecimal(this)"
+                  type="text"
+                  id="qualifiaction"
+                />
+              </td>
+              <td><input type="number" id="qualifiaction" /></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input maxlength="10" type="text" id="qualifiaction" /></td>
+              <td>
+                <input
+                  step="0.01"
+                  oninput="limitDecimal(this)"
+                  type="text"
+                  id="qualifiaction"
+                />
+              </td>
+              <td><input type="number" id="qualifiaction" /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input maxlength="10" type="text" id="qualifiaction" /></td>
+              <td>
+                <input
+                  step="0.01"
+                  oninput="limitDecimal(this)"
+                  type="text"
+                  id="qualifiaction"
+                />
+              </td>
+              <td><input type="number" id="qualifiaction" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input maxlength="10" type="text" id="qualifiaction" /></td>
+              <td>
+                <input
+                  step="0.01"
+                  oninput="limitDecimal(this)"
+                  type="text"
+                  id="qualifiaction"
+                />
+              </td>
+              <td><input type="number" id="qualifiaction" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <label for="course">COURSE APPLIED FOR</label>
+        BCA <input type="radio" required id="course">
+        B.Com <input type="radio" required id="course">
+        B.A. <input type="radio" required id="course">
+      </fieldset>
+      <input type="button" value="Submit">
+    <input type="reset" value="Reset">
+    </form>
+    <script>
+      function limitDecimal(input) {
+        // Limit input to two decimal places
+        input.value = parseFloat(input.value).toFixed(2);
+      }
+    </script>
+  </body>
+</html>
